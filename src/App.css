@@ -1,0 +1,19 @@
+body {
+  background: #141414;
+  color: #ffffff;
+}
+
+.row *{
+  width: auto;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.movie-app::-webkit-scrollbar {
+  display: none;
+}
