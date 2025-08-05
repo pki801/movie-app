@@ -5,7 +5,7 @@ const MovieList = (props) => {
     const FavoriteComponent = props.favoriteComponent;
     return (
         <>
-            {props.movies.map((movie, index)=> (
+            {props.movies && props.movies.map((movie, index)=> (
                 <div key={movie.imdbID || index} className='image-container d-flex justify-content-start m-3'>
                     <div className='col'>
                         <img src={movie.Poster} alt='movie'></img>
